@@ -3,6 +3,9 @@ Confirm-jQuery-Plugin
 
 Confirm is a jQuery plugin which enables inline confirmation of clicks on an element.
 
+## Demos
+http://jsfiddle.net/gh/get/jquery/1/elithompson/confirm-jquery-plugin/tree/master/demo/
+
 ## Usage
 Setup confirmation via JavaScript:
 ```html
