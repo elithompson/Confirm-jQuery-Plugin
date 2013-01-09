@@ -44,13 +44,10 @@
           timeoutToken;
         $that.text(o.confirmationText).addClass(o.confirmingClasses).addClass(cns(_confirming))
           .on(ens('mouseout'), function () {
-          console.log('mouseout');
           timeoutToken = setTimeout(function () {
             $that.html(originalText).off(ens('')).removeClass(cns(_confirming)).removeClass(o.confirmingClasses);
-            console.log('timeout');
           }, o.confirmingTimeout);
         }).on(ens('mouseover'), function () {
-          console.log('mouseover');
           clearTimeout(timeoutToken);
         });
       },
