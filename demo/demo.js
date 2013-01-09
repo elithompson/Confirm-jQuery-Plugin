@@ -21,14 +21,12 @@ $(function () {
   });
 
   // When rearm is set to true, the button can continue to be confirmed.
-  (function () {
-    var count = 0;
-    $(document).confirm({
-      rearm: true,
-      selector: '.rearm-confirm',
-      onConfirm: function (event) {
-        $(this).text('Confirmed: ' + (++count));
-      }
-    });
-  })();
+  var count = 0;
+  $(document).confirm({
+    rearm: true,
+    selector: '.rearm-confirm',
+    onConfirm: function (event) {
+      $(this).text('Confirmed: ' + (++count));
+    }
+  });
 });
