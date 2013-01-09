@@ -1,0 +1,10 @@
+---
+ name: Confirm jQuery Plugin Demo
+ description: This demo shows off ways to use the confirm plugin. https://github.com/elithompson/Confirm-jQuery-Plugin
+ authors:
+   - Eli Thompson
+ resources:
+   - https://raw.github.com/elithompson/Confirm-jQuery-Plugin/master/confirm.js
+   - http://twitter.github.com/bootstrap/assets/css/bootstrap.css
+ normalize_css: no
+   ...
