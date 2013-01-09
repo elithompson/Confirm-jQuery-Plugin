@@ -17,18 +17,7 @@
       };
     }
 
-    var o = $.extend({
-      onConfirm: function () {
-        return true;
-      },
-      selector: null,
-      eventNamespace: 'confirm',
-      classNamespace: 'confirm',
-      confirmingTimeout: 3 * 1000,
-      confirmationText: 'Are you sure?',
-      confirmingClasses: 'btn-danger',
-      rearm: false
-    }, options),
+    var o = $.extend({}, $.fn.confirm.defaults, options),
       _confirming = 'confirming',
       _confirmed = 'confirmed',
       ens = function (s) { // format for event namespace
@@ -69,5 +58,18 @@
       }
       return confirming.call(this, event);
     });
+  };
+  
+  $.fn.confirm.defaults = {
+	onConfirm: function () {
+      return true;
+    },
+    selector: null,
+    eventNamespace: 'confirm',
+    classNamespace: 'confirm',
+    confirmingTimeout: 3 * 1000,
+    confirmationText: 'Are you sure?',
+    confirmingClasses: 'btn-danger',
+    rearm: false
   };
 })(jQuery);
